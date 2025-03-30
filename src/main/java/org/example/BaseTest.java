@@ -10,7 +10,7 @@ public class BaseTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://only.digital/");
         try {
-            WebElement elementByXPath = driver.findElement(By.xpath("/html/body/main/footer")); // Пример XPath
+        WebElement elementByXPath = driver.findElement(By.xpath("/html/body/main/footer"));
             System.out.println("Элемент найден: " + elementByXPath.getText());
         } catch (org.openqa.selenium.NoSuchElementException e) {
             System.out.println("Элемент не найден.");
