@@ -16,19 +16,19 @@ public class BaseTest {
             WebElement elementByXPath = driver.findElement(By.xpath("/html/body/main/footer"));
             System.out.println("Элемент 1 найден: " + elementByXPath.getText());
         } catch (org.openqa.selenium.NoSuchElementException e) {
-            System.out.println("Элемент не найден.");
+            System.out.println("Элемент 1 не найден.");
         }
         try {
             WebElement elementByXPath = driver.findElement(By.xpath("html/body/main/footer/div[1]"));
             System.out.println("Элемент 2 найден: " + elementByXPath.getText());
         } catch (org.openqa.selenium.NoSuchElementException e) {
-            System.out.println("Элемент не найден.");
+            System.out.println("Элемент 2 не найден.");
         }
         try {
             WebElement elementByXPath = driver.findElement(By.xpath("html/body/main/footer/div[1]/button"));
             System.out.println("Элемент 3 найден: " + elementByXPath.getText());
         } catch (org.openqa.selenium.NoSuchElementException e) {
-            System.out.println("Элемент не найден.");
+            System.out.println("Элемент 3 не найден.");
         }
         try {
             WebElement elementByXPath = driver.findElement(By.xpath("html/body/main/footer/div[1]/button/ук32к432е34е"));
